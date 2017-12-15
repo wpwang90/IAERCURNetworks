@@ -1,0 +1,14 @@
+tData=zeros(180,360);
+for i = 1:180
+    for j = 1:360
+        tData(i,j)=(i-1)*360+j;
+    end
+end
+
+R = georasterref('RasterSize', [180 360], ...
+       'RasterInterpretation', 'cells', ...
+       'Latlim', [-89.5 89.5], 'Lonlim', [-179.5 179.5], ...
+       'ColumnsStartFrom', 'north');
+geotiffwrite('D:\1990-sp1\normGrid.tif',tData,R);
+
+

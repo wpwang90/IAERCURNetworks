@@ -1,0 +1,5 @@
+require(PearsonDS)
+pIIIpars <- list(shape=3, location=1, scale=0.5)
+temp=rpearsonIII(10000,params=pIIIpars)
+plot(ecdf(temp))
+write.csv(temp,".\\½á¹û\\PersonIIIRandomNumbers.csv")
