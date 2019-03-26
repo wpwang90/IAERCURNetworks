@@ -1,0 +1,14 @@
+This project is for the study "Local floods induce large-scale abrupt failures of road networks".
+
+The data generation and/or analyses in this study are coded in R and/or MATLAB.
+The source codes, executable scripts, regionalization tools for CaMa-flood model are available at http://hydro.iis.u-tokyo.ac.jp/~yamadai/cama-flood/
+index.html.
+
+The folder "J计算" has contained the Matlab code to produce input files to CaMa-flood model from CMIP5 files 
+and to covert results of CaMa-flood model to Geotiff.
+
+The folder "ChinaPro" and "China" has contained the R code to produce road networks in China from OpenStreetMap 
+and to calculate giant connected components under floods, random attacks and localized attacks.
+
+The folder "USAState" and "USA" has contained the R code to produce road networks in China from OpenStreetMap 
+and to calculate giant connected components under floods, random attacks and localized attacks.
